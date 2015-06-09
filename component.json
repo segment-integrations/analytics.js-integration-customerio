@@ -1,0 +1,19 @@
+{
+  "name": "analytics.js-integration-customerio",
+  "repo": "segment-integrations/analytics.js-integration-customerio",
+  "description": "The Customerio analytics.js integration.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "dependencies": {
+    "segmentio/facade": "1.x",
+    "segmentio/alias": "0.2.1",
+    "segmentio/convert-dates": "0.1.0",
+    "segmentio/analytics.js-integration": "0.3.x"
+  },
+  "development": {
+    "segmentio/analytics.js": "*",
+    "segmentio/clear-env": "0.2.x",
+    "segmentio/analytics.js-integration-tester": "1.4.x"
+  }
+}
