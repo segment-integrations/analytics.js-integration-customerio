@@ -65,6 +65,22 @@ describe('Customer.io', function() {
       analytics.initialize();
     });
 
+    describe('#page', function() {
+      beforeEach(function() {
+        analytics.stub(window._cio, 'page');
+      });
+
+      it('should call page', function() {
+        analytics.page();
+        analytics.called(window._cio.page);
+      });
+
+      it('should call page with name', function() {
+        analytics.page('home');
+        analytics.called(window._cio.page, 'home');
+      });
+    });
+
     describe('#identify', function() {
       beforeEach(function() {
         analytics.stub(window._cio, 'identify');
