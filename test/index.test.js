@@ -79,6 +79,16 @@ describe('Customer.io', function() {
         analytics.page('home');
         analytics.called(window._cio.page, 'home');
       });
+
+      it('should call page with url', function() {
+        analytics.page({ url: 'http://www.segment.com' });
+        analytics.called(window._cio.page, 'http://www.segment.com');
+      });
+
+      it('should call page with properties', function() {
+        analytics.page('home', { visitNumber: 42 });
+        analytics.assert.equal(window._cio.page.args[0][1].visitNumber, 42);
+      });
     });
 
     describe('#identify', function() {
