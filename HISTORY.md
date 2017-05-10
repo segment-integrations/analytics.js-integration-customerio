@@ -1,3 +1,16 @@
+
+2.1.0 / 2017-05-10
+==================
+
+  * Tests for url and properties
+  * Refactor for name handling
+  * Page imply + test
+  * Bump a.js-int-tester version to ^3.1.0 (#7)
+  * Pin karma, karma-mocha dev dependencies (#6)
+  * Update CONTRIBUTING.md
+  * Move Sauce Labs credentials into circle.yml
+  * Update Karma to 1.1.0
+  
 2.0.0 / 2016-06-21
 ==================
 
